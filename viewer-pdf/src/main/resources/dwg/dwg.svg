@@ -1,0 +1,73 @@
+<svg width="699.1" height="611.3" enable-background="new 0 0 661.296 552.551" overflow="visible" version="1.1" viewBox="0 0 699.1 611.3" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="Arrow1Lstart" overflow="visible" orient="auto">
+   <path transform="matrix(.8 0 0 .8 10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#1919ff" fill-rule="evenodd" stroke="#1919ff" stroke-width="1pt"/>
+  </marker>
+  <marker id="a" overflow="visible" orient="auto">
+   <path transform="matrix(.8 0 0 .8 10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#19dc00" fill-rule="evenodd" stroke="#19dc00" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="matrix(1.1327 0 0 1.1093 -133.97 -1.4168)" fill-rule="evenodd">
+  <rect x="256.9" y="166.5" width="281" height="190.5" fill="#f4f6f6" style="paint-order:stroke markers fill"/>
+ </g>
+ <symbol id="Org._Chart_-_Connector" transform="translate(47.4 25.39)" viewBox="-5.694 -17.641 11.389 35.281">
+  <path d="m0.999 17.64v-26.14c1.848 1.26 3.053 1.887 4.696 1.951-2.833-2.865-4.307-6.59-5.695-11.09-1.328 4.5-2.949 8.061-5.695 11.09 1.785-0.193 2.863-0.715 4.828-1.99v26.18z"/>
+ </symbol>
+ <g transform="matrix(1.1327 0 0 1.1093 -133.97 -1.4168)" fill="#1919ff" aria-label="Z">
+  <path d="m243.8 30h25.77v3.384l-20.74 25.69h21.25v3.735h-26.78v-3.384l20.74-25.69h-20.24z" fill="#1919ff"/>
+ </g>
+ <path d="m156.78 85.35-0.09355 308.26" fill="#1919ff" fill-rule="evenodd" marker-start="url(#Arrow1Lstart)" stroke="#1919ff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="3.3627" style="paint-order:stroke markers fill"/>
+ <path d="m591.16 394.92-434.38-1.2812" fill="#19dc00" fill-rule="evenodd" marker-start="url(#a)" stroke="#19dc00" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="3.3627" style="paint-order:stroke markers fill"/>
+ <g transform="matrix(1.1327 0 0 1.1093 -133.97 -1.4168)" fill="#19dc00" aria-label="Y">
+  <path d="m651.4 340.7h4.768l9.097 13.49 9.031-13.49h4.768l-11.6 17.18v15.62h-4.46v-15.62z" fill="#19dc00"/>
+ </g>
+ <g transform="matrix(1.1327 0 0 1.1093 -133.97 -1.4168)" fill="#5b5b5b" aria-label="O">
+  <path d="m221.2 344.4q-4.834 0-7.69 3.604-2.834 3.604-2.834 9.822 0 6.196 2.834 9.8 2.856 3.604 7.69 3.604t7.646-3.604q2.834-3.604 2.834-9.8 0-6.218-2.834-9.822-2.812-3.604-7.646-3.604zm0-3.604q6.899 0 11.03 4.636 4.131 4.614 4.131 12.39 0 7.756-4.131 12.39-4.131 4.614-11.03 4.614-6.921 0-11.07-4.614-4.131-4.614-4.131-12.39t4.131-12.39q4.153-4.636 11.07-4.636z" fill="#5b5b5b"/>
+ </g>
+ <g transform="matrix(1.1327 0 0 1.1093 -49.213 -48.771)" fill-rule="evenodd">
+  <g stroke-dasharray="12, 12" stroke-dashoffset="17.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="2">
+   <path d="m463.17 209.99-281.1-0.8468" fill="#19dc00" stroke="#19dc00" style="paint-order:stroke markers fill"/>
+   <path d="m463.17 209.99-0.0825 189.7" fill="#1919ff" stroke="#1919ff" style="paint-order:stroke markers fill"/>
+  </g>
+  <circle cx="464.21" cy="210.49" r="9.351" style="paint-order:stroke markers fill"/>
+ </g>
+ <g transform="matrix(1.1327 0 0 1.1093 -133.97 -1.4168)">
+  <text x="548.37085" y="185.73668" fill="#000000" font-family="TimesNewRomanPSMT" font-size="45px"><tspan font-size="53.33px">P</tspan></text>
+  <text x="519.19421" y="497.21774" fill="#5b5b5b" fill-rule="evenodd" font-family="Arial" font-size="85.33px" font-style="italic" stroke-dashoffset="17.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" stroke-width="3" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;paint-order:stroke markers fill" xml:space="preserve"><tspan x="519.19421" y="574.28943"/></text>
+  <g fill="#19dc00" aria-label="Py">
+   <path d="m557.2 303.6v12.33h5.581q3.098 0 4.79-1.604t1.692-4.57q0-2.944-1.692-4.548t-4.79-1.604zm-4.438-3.647h10.02q5.515 0 8.328 2.505 2.834 2.483 2.834 7.295 0 4.856-2.834 7.339-2.812 2.483-8.328 2.483h-5.581v13.18h-4.438z" fill="#19dc00"/>
+   <path d="m584.9 343.3q-1.114 2.856-2.171 3.728-1.057 0.8712-2.828 0.8712h-2.099v-2.199h1.542q1.085 0 1.685-0.5142 0.5998-0.5142 1.328-2.428l0.4713-1.2-6.47-15.74h2.785l4.999 12.51 4.999-12.51h2.785z" baseline-shift="sub"/>
+  </g>
+ </g>
+ <ellipse cx="475.29" cy="393.37" rx="8.213" ry="8.0433" fill="#19dc00" fill-rule="evenodd" stroke-width="1.1209" style="paint-order:stroke markers fill"/>
+ <g transform="matrix(1.1327 0 0 1.1093 -133.97 -1.4168)" fill="#1919ff">
+  <circle cx="256.9" cy="166.5" r="7.251" fill-rule="evenodd" style="paint-order:stroke markers fill"/>
+  <g aria-label="Pz">
+   <path d="m202.6 127.5v12.33h5.581q3.098 0 4.79-1.604t1.692-4.57q0-2.944-1.692-4.548t-4.79-1.604zm-4.438-3.647h10.02q5.515 0 8.328 2.505 2.834 2.483 2.834 7.295 0 4.856-2.834 7.339-2.812 2.483-8.328 2.483h-5.581v13.18h-4.438z"/>
+   <path d="m222.5 149.6h12.48v2.399l-9.883 11.5h9.883v2.099h-12.84v-2.399l9.883-11.5h-9.526z" baseline-shift="sub"/>
+  </g>
+  <g transform="scale(.714 1.401)" fill-rule="evenodd" stroke-dashoffset="17.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;paint-order:stroke markers fill" aria-label="}">
+   <path d="m401.4 186v2.864q-8.003 1.395-12.34 5.801-4.332 4.406-4.332 9.619 0 3.818 1.689 10.87 1.762 7.049 1.762 12.04 0 10.35-7.783 18.72-7.783 8.444-19.97 9.986v-2.864q8.37-1.468 12.7-6.315 4.332-4.773 4.332-11.23 0-4.479-1.468-11.6-1.395-7.049-1.395-11.82 0-7.269 5.213-13.95 5.213-6.755 15.57-10.5-10.65-4.259-15.79-10.87-5.066-6.608-5.066-13.88 0-4.479 1.468-11.67 1.468-7.196 1.468-11.53 0-6.241-4.185-11.09-4.112-4.846-12.85-6.975v-2.57q12.26 1.615 19.9 9.912 7.71 8.297 7.71 18.58 0 4.919-1.689 12.04-1.689 7.049-1.689 10.65 0 5.36 4.112 9.839 4.112 4.405 12.63 5.947z" stroke-width="3.322"/>
+  </g>
+ </g>
+ <g transform="matrix(1.1371 0 0 1.1093 -133.77 -.99168)">
+  <g transform="matrix(0 .5858 -1.707 0 0 0)" fill="#19dc00" fill-rule="evenodd" stroke-dashoffset="17.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;paint-order:stroke markers fill" aria-label="}">
+   <path d="m658.7-235v3.49q-9.754 1.7-15.03 7.069-5.28 5.369-5.28 11.72 0 4.653 2.058 13.24 2.148 8.59 2.148 14.68 0 12.62-9.485 22.82-9.485 10.29-24.34 12.17v-3.49q10.2-1.79 15.48-7.696 5.28-5.816 5.28-13.69 0-5.459-1.79-14.14-1.7-8.59-1.7-14.41 0-8.859 6.353-17 6.353-8.233 18.97-12.8-12.98-5.19-19.24-13.24-6.174-8.054-6.174-16.91 0-5.459 1.79-14.23 1.79-8.769 1.79-14.05 0-7.606-5.101-13.51-5.011-5.906-15.66-8.501v-3.132q14.94 1.969 24.25 12.08 9.396 10.11 9.396 22.64 0 5.995-2.058 14.68-2.058 8.59-2.058 12.98 0 6.532 5.011 11.99 5.011 5.369 15.39 7.248z" fill="#19dc00" stroke-width="3.322"/>
+  </g>
+  <g fill="#1919ff" aria-label="z">
+   <path d="m294.1 248.5h19.2v3.691l-15.21 17.69h15.21v3.23h-19.75v-3.691l15.21-17.69h-14.66z" fill="#1919ff"/>
+  </g>
+  <g fill="#19dc00" aria-label="y">
+   <path d="m399.2 418.1q-1.714 4.395-3.34 5.735t-4.351 1.34h-3.23v-3.384h2.373q1.67 0 2.593-0.791 0.9228-0.791 2.043-3.735l0.7251-1.846-9.954-24.21h4.285l7.69 19.25 7.69-19.25h4.285z" fill="#19dc00"/>
+  </g>
+  <g transform="translate(61.68 -42.175)" aria-label="P (x, y, z)">
+   <path d="m262.7 521v12.33h5.581q3.098 0 4.79-1.604t1.692-4.57q0-2.944-1.692-4.548t-4.79-1.604zm-4.438-3.647h10.02q5.515 0 8.328 2.505 2.834 2.483 2.834 7.295 0 4.856-2.834 7.339-2.812 2.483-8.328 2.483h-5.581v13.18h-4.438z"/>
+   <path d="m309.3 516q-2.944 5.054-4.373 9.998-1.428 4.944-1.428 10.02t1.428 10.06q1.45 4.966 4.373 9.998h-3.516q-3.296-5.164-4.944-10.15-1.626-4.988-1.626-9.91 0-4.9 1.626-9.866t4.944-10.15z"/>
+   <path d="m344.8 544.5h4.636v3.779l-3.604 7.031h-2.834l1.802-7.031z"/>
+   <path d="m382.7 552.4q-1.714 4.395-3.34 5.735t-4.351 1.34h-3.23v-3.384h2.373q1.67 0 2.593-0.791 0.9228-0.791 2.043-3.735l0.7251-1.846-9.954-24.21h4.285l7.69 19.25 7.69-19.25h4.285z"/>
+   <path d="m315.6 525.12h19.2v3.691l-15.21 17.69h15.21v3.23h-19.75v-3.691l15.21-17.69h-14.66z"/>
+   <path d="m400.7 516h3.516q3.296 5.186 4.922 10.15 1.648 4.966 1.648 9.866 0 4.922-1.648 9.91-1.626 4.988-4.922 10.15h-3.516q2.922-5.032 4.351-9.998 1.45-4.988 1.45-10.06 0-5.076-1.45-10.02-1.428-4.944-4.351-9.998z"/>
+  </g>
+  <circle cx="256.6" cy="356.1" r="7.251" fill="#5b5b5b" fill-rule="evenodd" style="paint-order:stroke markers fill"/>
+ </g>
+</svg>
