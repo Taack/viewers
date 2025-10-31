@@ -1,14 +1,13 @@
 package stp
 
 import groovy.transform.CompileStatic
-import io.micronaut.context.annotation.ConfigurationProperties
+import taack.ui.TaackUiConfiguration
 
 @CompileStatic
-@ConfigurationProperties('stp')
 class StpConfiguration {
-    String freecadPath
-    Boolean xvfbRun
-    Boolean singleInstance
-    Boolean offscreen
-    Boolean useWeston
+    static String freecadPath = TaackUiConfiguration.home + '/freecad-link'
+    static Boolean xvfbRun = false
+    static Boolean singleInstance = true
+    static Boolean offscreen = true
+    static Boolean useWeston = true
 }

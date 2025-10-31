@@ -4,14 +4,13 @@ import attachement.AttachmentSecurityService
 import attachment.Attachment
 import grails.compiler.GrailsCompileStatic
 import grails.gsp.PageRenderer
+import jakarta.annotation.PostConstruct
 import org.codehaus.groovy.runtime.MethodClosure
 import org.springframework.beans.factory.annotation.Autowired
 import org.taack.IAttachmentPreviewConverter
 import org.taack.IAttachmentShowIFrame
 import taack.domain.TaackAttachmentService
 import taack.render.TaackUiEnablerService
-
-import javax.annotation.PostConstruct
 
 @GrailsCompileStatic
 final class VideoPreviewConverterService implements IAttachmentPreviewConverter, IAttachmentShowIFrame {

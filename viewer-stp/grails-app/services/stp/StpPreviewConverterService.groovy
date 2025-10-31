@@ -3,15 +3,15 @@ package stp
 import attachment.Attachment
 import grails.compiler.GrailsCompileStatic
 import grails.gsp.PageRenderer
-import org.apache.commons.io.FileUtils
+import jakarta.annotation.PostConstruct
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.taack.IAttachmentPreviewConverter
 import org.taack.IAttachmentShowIFrame
 import taack.domain.TaackAttachmentService
 import taack.domain.TaackAttachmentService.PreviewFormat
+import taack.ui.TaackUiConfiguration
 
-import javax.annotation.PostConstruct
 import java.nio.file.Files
 import java.nio.file.Path
 
@@ -22,11 +22,7 @@ class StpPreviewConverterService implements IAttachmentPreviewConverter, IAttach
 
     static final singleton = new Object()
 
-    @Value('${intranet.root}')
-    String intranetRoot
-
-    @Autowired
-    StpConfiguration stpConfiguration
+    final String intranetRoot = TaackUiConfiguration.root
 
     String getGlbDir() {
         intranetRoot + "/stp/glb"
@@ -36,9 +32,9 @@ class StpPreviewConverterService implements IAttachmentPreviewConverter, IAttach
 
     @PostConstruct
     void initTaackService() {
-        log.info "singleInstance = ${stpConfiguration.singleInstance}, xvfbRun = ${stpConfiguration.xvfbRun}, useWeston = ${stpConfiguration.useWeston}, offscreen = ${stpConfiguration.offscreen}"
+        log.info "singleInstance = ${StpConfiguration.singleInstance}, xvfbRun = ${StpConfiguration.xvfbRun}, useWeston = ${StpConfiguration.useWeston}, offscreen = ${StpConfiguration.offscreen}"
         TaackAttachmentService.registerPreviewConverter(this)
-        FileUtils.forceMkdir(new File(glbDir))
+        new File(glbDir).mkdirs()
         TaackAttachmentService.registerAdditionalShow(this)
     }
 
@@ -83,15 +79,15 @@ class StpPreviewConverterService implements IAttachmentPreviewConverter, IAttach
 
             String cmd
             Process pWeston
-            if (stpConfiguration.useWeston) {
+            if (StpConfiguration.useWeston) {
                 String pWestonCmd = "/usr/bin/weston --no-config --socket=wl-freecad --backend=headless"
                 log.info "$pWestonCmd"
                 pWeston = pWestonCmd.execute()
-                cmd = "env WAYLAND_DISPLAY=wl-freecad ${stpConfiguration.freecadPath}  QT_QPA_PLATFORM=wayland ${stpConfiguration.singleInstance ? '--single-instance' : ''} ${convFile.path}"
-            } else if (stpConfiguration.xvfbRun) {
-                cmd = "${stpConfiguration.xvfbRun ? "/usr/bin/xvfb-run " : ""}${stpConfiguration.freecadPath} ${stpConfiguration.singleInstance ? '--single-instance' : ''} ${convFile.path}"
-            } else if (stpConfiguration.offscreen) {
-                cmd = "env QT_QPA_PLATFORM=offscreen ${stpConfiguration.freecadPath} ${stpConfiguration.singleInstance ? '--single-instance' : ''} ${convFile.path}"
+                cmd = "env WAYLAND_DISPLAY=wl-freecad ${StpConfiguration.freecadPath}  QT_QPA_PLATFORM=wayland ${StpConfiguration.singleInstance ? '--single-instance' : ''} ${convFile.path}"
+            } else if (StpConfiguration.xvfbRun) {
+                cmd = "${StpConfiguration.xvfbRun ? "/usr/bin/xvfb-run " : ""}${StpConfiguration.freecadPath} ${StpConfiguration.singleInstance ? '--single-instance' : ''} ${convFile.path}"
+            } else if (StpConfiguration.offscreen) {
+                cmd = "env QT_QPA_PLATFORM=offscreen ${StpConfiguration.freecadPath} ${StpConfiguration.singleInstance ? '--single-instance' : ''} ${convFile.path}"
             }
             log.info "executing $cmd"
             Process p = cmd.execute()

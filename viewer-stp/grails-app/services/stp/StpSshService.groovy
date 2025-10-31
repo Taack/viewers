@@ -6,13 +6,11 @@ import crew.User
 import crew.ssh.helper.RealFoldersCallback
 import grails.compiler.GrailsCompileStatic
 import grails.util.Pair
-import org.apache.commons.io.FileUtils
-import org.springframework.beans.factory.annotation.Value
+import jakarta.annotation.PostConstruct
 import taack.domain.TaackAttachmentService
 import taack.ssh.SshEventRegistry
 import taack.ssh.vfs.FileTree
-
-import javax.annotation.PostConstruct
+import taack.ui.TaackUiConfiguration
 
 @GrailsCompileStatic
 final class StpSshService implements SshEventRegistry.VfsEvent {
@@ -21,8 +19,7 @@ final class StpSshService implements SshEventRegistry.VfsEvent {
 
     private final String VFS_FILE_NAME = "stp"
 
-    @Value('${intranet.root}')
-    String intranetRoot
+    final String intranetRoot = TaackUiConfiguration.root
 
     String getOpenDatabaseRootPath() {
         intranetRoot + "/stp/openDatabase"
@@ -41,9 +38,9 @@ final class StpSshService implements SshEventRegistry.VfsEvent {
     @PostConstruct
     def initVfs() {
         log.info "initVfs start"
-        FileUtils.forceMkdir(new File(openDatabaseRootPath))
-        FileUtils.forceMkdir(new File(storePath))
-        FileUtils.forceMkdir(new File(tmpUploadFolder))
+        new File(openDatabaseRootPath).mkdirs()
+        new File(storePath).mkdirs()
+        new File(tmpUploadFolder).mkdirs()
         SshEventRegistry.VfsProvider.initVfsEventProvider(VFS_FILE_NAME, this)
         log.info "initVfs ends"
     }

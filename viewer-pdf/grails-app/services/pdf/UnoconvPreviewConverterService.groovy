@@ -3,16 +3,12 @@ package pdf
 import attachment.Attachment
 import grails.compiler.GrailsCompileStatic
 import grails.gsp.PageRenderer
-import org.apache.commons.io.FileUtils
+import jakarta.annotation.PostConstruct
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.beans.factory.annotation.Value
 import org.taack.IAttachmentConverter
-import org.taack.IAttachmentPreviewConverter
 import org.taack.IAttachmentShowIFrame
 import taack.domain.TaackAttachmentService
-import taack.domain.TaackAttachmentService.PreviewFormat
-
-import javax.annotation.PostConstruct
+import taack.ui.TaackUiConfiguration
 
 @GrailsCompileStatic
 final class UnoconvPreviewConverterService implements IAttachmentConverter, IAttachmentShowIFrame {
@@ -21,8 +17,7 @@ final class UnoconvPreviewConverterService implements IAttachmentConverter, IAtt
 
     static final singleton = new Object()
 
-    @Value('${intranet.root}')
-    String intranetRoot
+    final String intranetRoot = TaackUiConfiguration.root
 
     String getPdfDir() {
         intranetRoot + "/pdf"
@@ -34,7 +29,7 @@ final class UnoconvPreviewConverterService implements IAttachmentConverter, IAtt
     void initTaackService() {
         TaackAttachmentService.registerConverter(this)
         TaackAttachmentService.registerAdditionalShow(this)
-        FileUtils.forceMkdir(new File(pdfDir))
+        new File(pdfDir).mkdirs()
     }
 
     @Autowired

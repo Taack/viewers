@@ -16,8 +16,7 @@ class StpController {
 
     PageRenderer groovyPageRenderer
 
-    @Value('${intranet.root}')
-    String intranetRoot
+    final String intranetRoot = TaackUiConfiguration.root
 
     String getGlbDir() {
         intranetRoot + "/stp/glb"
