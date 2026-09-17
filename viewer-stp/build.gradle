@@ -2,6 +2,10 @@ plugins {
     id 'taack-grails-assets-plugin'
 }
 
+dependencies {
+    implementation("org.apache.grails:grails-quartz")
+}
+
 grails {
     // should use gradle -Dgrails.run.active=true bootRun
     exploded = true
