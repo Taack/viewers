@@ -1,6 +1,6 @@
 package pdf
 
-import attachement.AttachmentSecurityService
+import attachment.AttachmentSecurityService
 import attachment.Attachment
 import grails.compiler.GrailsCompileStatic
 import grails.gsp.PageRenderer

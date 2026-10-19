@@ -1,6 +1,6 @@
 package video
 
-import attachement.AttachmentSecurityService
+import attachment.AttachmentSecurityService
 import attachment.Attachment
 import grails.compiler.GrailsCompileStatic
 import grails.plugin.springsecurity.annotation.Secured
