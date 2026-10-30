@@ -47,7 +47,6 @@ class StpController {
             taackAttachmentService.attachmentPreview(a)
 //            stpPreviewConverterService.createWebpPreview(a, glbDir + '/' + a.contentShaOne.strip() + '.webp')
         }
-        //        response.setContentType('application/pdf')
         response.setHeader('Content-disposition', "attachment;filename=${shaOne.strip() + '.glb'}")
         response.outputStream << f.bytes
         response.outputStream.flush()
