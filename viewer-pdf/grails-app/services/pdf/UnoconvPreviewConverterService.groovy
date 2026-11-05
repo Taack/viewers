@@ -43,7 +43,7 @@ final class UnoconvPreviewConverterService implements IAttachmentConverter, IAtt
         String filePath = taackAttachmentService.attachmentPath(attachment)
         def pdf = new File(pdfDir + "/" + attachment.contentShaOne + ".$outputFormat").toPath()
         if (pdf.toFile().exists()) return pdf.toFile()
-        String unoconvCmd = "unoconv -f $outputFormat -o $pdf ${filePath}"
+        String unoconvCmd = "unoconvert ${filePath} $pdf"
         println unoconvCmd
         synchronized (singleton) {
             Process pPdf = unoconvCmd.execute()
